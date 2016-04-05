@@ -13,6 +13,8 @@
 		521FEFD71CB3B79E000A3B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521FEFD51CB3B79E000A3B7E /* Main.storyboard */; };
 		521FEFD91CB3B79E000A3B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521FEFD81CB3B79E000A3B7E /* Assets.xcassets */; };
 		521FEFDC1CB3B79E000A3B7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521FEFDA1CB3B79E000A3B7E /* LaunchScreen.storyboard */; };
+		521FEFEA1CB3B98C000A3B7E /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 521FEFE91CB3B98C000A3B7E /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		521FEFED1CB3B9E0000A3B7E /* HDeviceIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 521FEFEC1CB3B9E0000A3B7E /* HDeviceIdentifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		521FEFD81CB3B79E000A3B7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521FEFDB1CB3B79E000A3B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		521FEFDD1CB3B79E000A3B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521FEFE81CB3B98C000A3B7E /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		521FEFE91CB3B98C000A3B7E /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		521FEFEB1CB3B9E0000A3B7E /* HDeviceIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDeviceIdentifier.h; sourceTree = "<group>"; };
+		521FEFEC1CB3B9E0000A3B7E /* HDeviceIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDeviceIdentifier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		521FEFCB1CB3B79E000A3B7E /* HDeviceIdentifier */ = {
 			isa = PBXGroup;
 			children = (
+				521FEFE71CB3B98C000A3B7E /* HDeviceIdentifierUtils */,
 				521FEFCF1CB3B79E000A3B7E /* AppDelegate.h */,
 				521FEFD01CB3B79E000A3B7E /* AppDelegate.m */,
 				521FEFD21CB3B79E000A3B7E /* ViewController.h */,
@@ -77,6 +84,17 @@
 				521FEFCD1CB3B79E000A3B7E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		521FEFE71CB3B98C000A3B7E /* HDeviceIdentifierUtils */ = {
+			isa = PBXGroup;
+			children = (
+				521FEFE81CB3B98C000A3B7E /* SFHFKeychainUtils.h */,
+				521FEFE91CB3B98C000A3B7E /* SFHFKeychainUtils.m */,
+				521FEFEB1CB3B9E0000A3B7E /* HDeviceIdentifier.h */,
+				521FEFEC1CB3B9E0000A3B7E /* HDeviceIdentifier.m */,
+			);
+			path = HDeviceIdentifierUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +170,8 @@
 			files = (
 				521FEFD41CB3B79E000A3B7E /* ViewController.m in Sources */,
 				521FEFD11CB3B79E000A3B7E /* AppDelegate.m in Sources */,
+				521FEFEA1CB3B98C000A3B7E /* SFHFKeychainUtils.m in Sources */,
+				521FEFED1CB3B9E0000A3B7E /* HDeviceIdentifier.m in Sources */,
 				521FEFCE1CB3B79E000A3B7E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
