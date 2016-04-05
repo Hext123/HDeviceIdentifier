@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HDeviceIdentifier.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //保存唯一设备标识, 如果标识已经存在则不进行任何操作
+    [HDeviceIdentifier saveDeviceIdentifier];
     return YES;
 }
 

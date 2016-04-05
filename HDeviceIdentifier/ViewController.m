@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HDeviceIdentifier.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //获取唯一设备标识
+    NSString *deviceIdentifier = [HDeviceIdentifier deviceIdentifier];
+    NSLog(@"唯一设备标识:%@",deviceIdentifier);
+    
+    //判断应用是第一次在这台手机上安装
+    BOOL isFirstInstall = [HDeviceIdentifier isFirstInstall];
+    if (isFirstInstall) {
+        NSLog(@"本应用是第一次在这台手机上安装");
+    }else{
+        NSLog(@"本应用不是第一次在这台手机上安装");
+    }
 }
 
 - (void)didReceiveMemoryWarning {
