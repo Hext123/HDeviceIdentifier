@@ -17,8 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //保存唯一设备标识, 如果标识已经存在则不进行任何操作
-    [HDeviceIdentifier saveDeviceIdentifier];
+    //同步唯一设备标识 (如果标识已经存在则不会进行任何操作)
+    [HDeviceIdentifier syncDeviceIdentifier];
     return YES;
 }
 

@@ -15,11 +15,11 @@
 @implementation HDeviceIdentifier
 
 /**
- *  保存唯一设备标识(已存在则不更新)
+ *  同步唯一设备标识 (生成并保存唯一设备标识,如已存在则不进行任何处理)
  *
  *  @return 是否成功
  */
-+(BOOL)saveDeviceIdentifier{
++(BOOL)syncDeviceIdentifier{
     
     /**
      *  获取应用的UUID标识
@@ -49,7 +49,10 @@
  *  @return 设备标识
  */
 +(NSString*)deviceIdentifier{
+    //先同步一下, 防止设备标识还未存在的情况
+    [self syncDeviceIdentifier];
     
+    //从钥匙串中获取唯一设备标识
     NSString * deviceIdentifier = [SFHFKeychainUtils getPasswordForUsername:@"deviceIdentifier" andServiceName:bundleIdentifier error:nil];
     
     return deviceIdentifier;
@@ -68,7 +71,7 @@
     /**
      *  如果钥匙串中存的deviceIdentifier(设备标识)不存在 或者 等于deviceIdentifier(本应用的UUID) , 则为第一次安装
      */
-    if (deviceIdentifier.length == 0 || [deviceIdentifier isEqualToString:identifierForVendor]) {
+    if ( !deviceIdentifier || [deviceIdentifier isEqualToString:identifierForVendor]) {
         return YES;
     }else{
         return NO;

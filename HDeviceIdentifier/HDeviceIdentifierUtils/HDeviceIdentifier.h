@@ -10,11 +10,11 @@
 
 @interface HDeviceIdentifier : NSObject
 /**
- *  保存唯一设备标识(已存在则不更新)
+ *  同步唯一设备标识 (生成并保存唯一设备标识,如已存在则不进行任何处理)
  *
  *  @return 是否成功
  */
-+(BOOL)saveDeviceIdentifier;
++(BOOL)syncDeviceIdentifier;
 
 /**
  *  返回唯一设备标识
