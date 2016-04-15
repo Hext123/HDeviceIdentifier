@@ -18,7 +18,9 @@
 
 ### 方法说明:
 
-* `+(BOOL)syncDeviceIdentifier;` 同步唯一设备标识. 生成并保存唯一设备标识, 如标识已存在则不进行任何处理. 建议在`didFinishLaunchingWithOptions`调用此方法,如:
+* `+(BOOL)syncDeviceIdentifier;` 同步唯一设备标识. (生成并保存唯一设备标识, 如标识已存在则不进行任何处理.) 
+
+  建议在`didFinishLaunchingWithOptions`调用此方法,如:
 
   ```objectivec
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
