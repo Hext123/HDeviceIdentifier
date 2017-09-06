@@ -4,7 +4,7 @@
 
 ### 原理:
 
-* 使用`UUID`+`KeyChain`记录设备唯一标识, 博客地址: <http://blog.wskfz.com/index.php/archives/28/>
+* 使用`UUID`+`KeyChain`记录设备唯一标识, 博客地址: <https://blog.wskfz.com/index.php/archives/28/>
 
 ### 使用步骤:
 
