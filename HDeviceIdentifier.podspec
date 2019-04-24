@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "HDeviceIdentifier"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "封装了持久化保存/查看设备唯一标识的功能, 并且可以判断应用是不是第一次安装 (UUID+KeyChain)"
 
   # spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "HDeviceIdentifier/HDeviceIdentifierUtils/**/*.{h,m}"
   spec.public_header_files = "HDeviceIdentifier/HDeviceIdentifierUtils/HDeviceIdentifier.h"
 
-  non_arc_files = 'HDeviceIdentifier/HDeviceIdentifierUtils/SFHFKeychainUtils.m'
+  non_arc_files = 'HDeviceIdentifier/HDeviceIdentifierUtils/SFHFKeychainUtils.{h,m}'
   spec.exclude_files = non_arc_files
 
   spec.subspec 'no-arc' do |sp|
