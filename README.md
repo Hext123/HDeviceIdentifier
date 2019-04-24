@@ -8,6 +8,14 @@
 
 ### 使用步骤:
 
+#### CocoaPads (推荐):
+
+```ruby
+pod 'HDeviceIdentifier', '~> 0.1'
+```
+
+#### 手动引入:
+
 1. 下载此项目 (点击`Download ZIP`按钮 或 [点此下载](https://github.com/Hext123/HDeviceIdentifier/archive/master.zip))
 
 2. 把`HDeviceIdentifier`目录下的`HDeviceIdentifierUtils`文件夹拖到你的项目中 ([查看此文件夹](https://github.com/Hext123/HDeviceIdentifier/tree/master/HDeviceIdentifier/HDeviceIdentifierUtils))
