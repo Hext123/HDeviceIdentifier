@@ -1,6 +1,9 @@
 # HDeviceIdentifier
 封装了持久化保存/查看设备唯一标识功能的工具类, 并且可以判断应用是不是第一次安装
 
+[![Version](https://img.shields.io/cocoapods/v/HDeviceIdentifier.svg?style=flat)](https://cocoapods.org/pods/HDeviceIdentifier)
+[![License](https://img.shields.io/cocoapods/l/HDeviceIdentifier.svg?style=flat)](https://cocoapods.org/pods/HDeviceIdentifier)
+[![Platform](https://img.shields.io/cocoapods/p/HDeviceIdentifier.svg?style=flat)](https://cocoapods.org/pods/HDeviceIdentifier)
 
 ### 原理:
 
