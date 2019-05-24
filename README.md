@@ -29,17 +29,6 @@ pod 'HDeviceIdentifier', '~> 0.1'
 
 ### 方法说明:
 
-* `+(BOOL)syncDeviceIdentifier;` 同步唯一设备标识. (生成并保存唯一设备标识, 如标识已存在则不进行任何处理.) 
-
-  建议在`didFinishLaunchingWithOptions`调用此方法,如:
-
-  ```objectivec
-  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-      [HDeviceIdentifier syncDeviceIdentifier];
-      return YES;
-  }
-  ```
-  
 * `+(NSString*)deviceIdentifier;` 返回唯一设备标识, 需要使用设备标识的时候调用此方法, 如用户注册时传给后台判断此手机是不是第一次注册账号
 
 * `+(BOOL)isFirstInstall;` 判断应用是第一次在这台手机上安装
